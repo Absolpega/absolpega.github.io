@@ -1,1 +1,28 @@
-Hello world!
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script
+            src="https://unpkg.com/preact@10.18.1/dist/preact.min.js"
+            integrity="sha384-+o1ZjcqLSiS8GjY5aYypf3bpxOso7Xakjk4yzLcF9vNExaq4+t/3qagSYvOrOprp"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/dataformsjs@5/js/react/jsxLoader.min.js"
+            integrity="sha384-pNQCimHYCsFLqVTrrIQeSIc7Vt5Gag1Exrf82eycgiCAdYtVWSVqUrjVazvJsDky"
+            crossorigin="anonymous"
+        ></script>
+
+        <title>Hello world!</title>
+    </head>
+    <script type="text/babel">
+        //@jsx preact.createElement
+        //@jsxFrag preact.Fragment
+        preact.render(<h1>Hello world!</h1>, document.getElementById("root"));
+    </script>
+    <body>
+        <div id="root"></div>
+    </body>
+</html>

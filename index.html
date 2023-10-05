@@ -9,8 +9,17 @@
             integrity="sha384-pNQCimHYCsFLqVTrrIQeSIc7Vt5Gag1Exrf82eycgiCAdYtVWSVqUrjVazvJsDky"
             crossorigin="anonymous"
         ></script>
+        <script type="importmap">
+            {
+                "imports": {
+                    "preact": "https://cdn.jsdelivr.net/npm/preact@10.18.1/+esm",
+                    "preact/hooks": "https://cdn.jsdelivr.net/npm/preact@10.18.1/hooks/+esm"
+                }
+            }
+        </script>
         <title>Hello world!</title>
         <link rel="stylesheet" href="index.css" />
+
         <script data-type="module" type="text/babel" src="index.jsx"></script>
     </head>
     <body>

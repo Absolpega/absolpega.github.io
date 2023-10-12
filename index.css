@@ -37,13 +37,38 @@ button {
 
     text-align: center;
 
-    transition-duration: 1s;
     cursor: pointer;
+
+    position: relative;
+
+    transition: opacity 1s;
 }
 
 button:hover {
-    background-image: linear-gradient(#ffffff, #ffffff);
+    z-index: 1;
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: #ffffff;
     color: #000000;
+
+    opacity: 0;
+    transition: inherit;
+
+    border-radius: inherit;
+
+    z-index: -1;
+}
+
+button:hover:before {
+    opacity: 1;
 }
 
 .counter-container {

@@ -4,32 +4,45 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!--
         <script
             src="https://cdn.jsdelivr.net/npm/dataformsjs@5/js/react/jsxLoader.min.js"
             integrity="sha384-pNQCimHYCsFLqVTrrIQeSIc7Vt5Gag1Exrf82eycgiCAdYtVWSVqUrjVazvJsDky"
             crossorigin="anonymous"
         ></script>
+        -->
+        <script src="jsxLoader.js"></script>
+
         <script type="importmap">
             {
                 "imports": {
-                    "preact": "https://esm.sh/preact@10.18.1/",
-                    "preact/hooks": "https://esm.sh/preact@10.18.1/hooks/"
+                    "preact": "https://esm.sh/stable/preact@10.18.1/es2022/preact.mjs",
+                    "preact/hooks": "https://esm.sh/stable/preact@10.18.1/es2022/hooks/.js"
                 }
             }
         </script>
         <title>Hello world!</title>
 
-        <link rel="preload" as="fetch" href="index.jsx" />
-
-        <script type="module" src="https://esm.sh/preact@10.18.1/"></script>
         <script
             type="module"
-            src="https://esm.sh/preact@10.18.1/hooks/"
+            src="https://esm.sh/stable/preact@10.18.1/es2022/preact.mjs"
+        ></script>
+        <script
+            type="module"
+            src="https://esm.sh/stable/preact@10.18.1/es2022/hooks/.js"
         ></script>
 
         <link
             rel="preload"
+            as="fetch"
+            crossorigin="anonymous"
+            href="index.jsx"
+        />
+
+        <link
+            rel="preload"
             as="font"
+            crossorigin="anonymous"
             href="https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOV.woff2"
         />
 
